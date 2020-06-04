@@ -1,3 +1,11 @@
+Star & fork ;)
+## Commands handler
+```js
+
+```
+
+## Events handler
+```js
 const {readdir} = require('fs');
 
 module.exports = async (client) => {
@@ -34,3 +42,5 @@ module.exports = async (client) => {
         });
     });
 };
+
+```
