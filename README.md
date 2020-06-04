@@ -44,3 +44,26 @@ module.exports = async (client) => {
 };
 
 ```
+
+
+## Use commands handler
+```js
+exports.run = (client, message) => {
+console.log('cool test command !')
+};
+module.exports.conf = {
+    aliases: ['test']
+};
+module.exports.help = {
+    name: 'testing'
+};
+```
+
+
+## Use event handler
+```js
+module.exports = (client, data, data) => {
+console.log('cool event handler  !')
+};
+
+```
