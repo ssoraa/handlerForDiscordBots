@@ -6,8 +6,8 @@ start = async () => {
     client.commands = new Collection();
     client.aliases = new Collection();
     // include handlers
-   /** Commands */ require('./handlers/Commands')(client);
-   /** Events */ require('./handlers/Events')(client);
+   /** Commands */ await require('./handlers/Commands')(client);
+   /** Events */ await require('./handlers/Events')(client);
   // Start your bot
   client.login(config.token);
 };
